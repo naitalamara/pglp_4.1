@@ -24,6 +24,7 @@ public class NumeroTelephone {
 	@Override
 	public String toString() {
 		return "NumeroTelephone [nomteleph=" + nomteleph + ", numero=" + numero + "]";
+		
 	}
 	
 	
