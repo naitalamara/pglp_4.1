@@ -59,6 +59,44 @@ public class Personnel implements Personneltype {
 	
 	
 	
+	public String getNom() {
+		return nom;
+	}
+
+
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+
+
+	public String getFonction() {
+		return fonction;
+	}
+
+
+
+	public List<NumeroTelephone> getNumerotelephone() {
+		return numerotelephone;
+	}
+
+
+
+	public LocalDate getDatenaissance() {
+		return datenaissance;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Personnel [nom=" + nom + ", prenom=" + prenom + ", fonction=" + fonction + ", numerotelephone="
+				+ numerotelephone + ", datenaissance=" + datenaissance + "]";
+	}
+
+
+
 	public void affichage() {
 		// TODO Auto-generated method stub
 		
