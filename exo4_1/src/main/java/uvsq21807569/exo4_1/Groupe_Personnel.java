@@ -26,6 +26,10 @@ public class Groupe_Personnel implements Personneltype{
 		// TODO Auto-generated method stub
 		
 	}
+	public boolean estgroupe() {
+	
+		return true;
+	}
 	
 	
 

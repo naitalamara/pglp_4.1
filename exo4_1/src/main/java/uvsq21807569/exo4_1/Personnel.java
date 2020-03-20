@@ -102,4 +102,11 @@ public class Personnel implements Personneltype {
 		
 	
 	}
+
+
+
+	public boolean estgroupe() {
+		
+		return false;
+	}
 }
