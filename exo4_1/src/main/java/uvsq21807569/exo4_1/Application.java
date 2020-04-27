@@ -25,19 +25,35 @@ public class Application
 				.numerotelph(new NumeroTelephone("mobile","0753233267"))
 				.numerotelph(new NumeroTelephone("fixe","0747143267"))
 				.build();
+    	
+    	Personnel c=new Personnel
+				.builder("samis", "nicolas", "employe")
+				.naissance(LocalDate.parse("1986-06-15" , DateTimeFormatter.ISO_DATE))
+				.numerotelph(new NumeroTelephone("mobile","0756143267"))
+				.numerotelph(new NumeroTelephone("fixe","0647143267"))
+				.build();
+    	
+    	
+    
+    	
     	 Groupe_Personnel grp = new Groupe_Personnel();
+    	 Groupe_Personnel grp2 = new Groupe_Personnel();
+    	 
+    	 grp2.addpersonnel(c);
     	
     	 grp.addpersonnel(a);
-    	 grp.affichage();
-    	 System.out.println(" le groupe contiens deux personnes a et b      ");
-    	 grp.addpersonnel(b);
-    	 grp.affichage();
-    	System.out.println("supprimer la personne b");
-    	 grp.removepersonnel(b);
-    	 grp.affichage();
-    	 grp.removepersonnel(a);
     	
+    	 grp.addpersonnel(b);
+    	// grp.affichage();
+    	//System.out.println("supprimer la personne b");
+    	// grp.removepersonnel(b);
+    	// grp.affichage();
+    	// grp.removepersonnel(a);
+    	
+    	 grp.addpersonnel(grp2);
+    	 grp.affichage();
        
     		   
     }
+
 }
