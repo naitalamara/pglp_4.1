@@ -89,16 +89,13 @@ public class Personnel implements Personneltype {
 
 
 
-	@Override
-	public String toString() {
-		return "Personnel [nom=" + nom + ", prenom=" + prenom + ", fonction=" + fonction + ", numerotelephone="
-				+ numerotelephone + ", datenaissance=" + datenaissance + "]";
-	}
+	
 
 
 
 	public void affichage() {
-		// TODO Auto-generated method stub
+		System.out.println("Personnel [nom=" + nom + ", prenom=" + prenom + ", fonction=" + fonction + ", numerotelephone="
+				+ numerotelephone + ", datenaissance=" + datenaissance + "]");
 		
 	
 	}

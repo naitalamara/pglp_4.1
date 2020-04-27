@@ -1,6 +1,6 @@
 package uvsq21807569.exo4_1;
 
-public class NumeroTelephone {
+public class NumeroTelephone   {
 
 	private String nomteleph ;
 	private String numero ;

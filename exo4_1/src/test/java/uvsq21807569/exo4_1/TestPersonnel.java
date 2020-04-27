@@ -16,7 +16,7 @@ public class TestPersonnel {
 	@Before
 	public void init() {
 	 a=new Personnel
-	.builder("cheklat", "sabrina", "directrice")
+	.builder("chek", "sabrina", "directrice")
 	.naissance(LocalDate.parse("1996-06-15" , DateTimeFormatter.ISO_DATE))
 	.numerotelph(new NumeroTelephone("mobile","0700"))
 	.numerotelph(new NumeroTelephone("fixe","0600"))
@@ -35,7 +35,7 @@ public class TestPersonnel {
 	public void test() {
 	
 		
-		assertEquals(a.getNom(), "cheklat");
+		assertEquals(a.getNom(), "chek");
 		assertEquals(a.getPrenom(), "sabrina");
 		assertEquals(a.getFonction(), "directrice");
 		assertEquals(a.getDatenaissance(),LocalDate.parse("1996-06-15", DateTimeFormatter.ISO_DATE));
